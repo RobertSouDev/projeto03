@@ -57,6 +57,10 @@ form{
     min-height: 300px ;
 
     padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .fieldset-wrapper{
@@ -109,7 +113,9 @@ fieldset legend{
     color: #6c6a71;
 }
 
-.input-wrapper input, .input-wrapper textarea{
+.input-wrapper input, 
+.input-wrapper textarea, 
+.input-wrapper select{
     background: #fafafc;
 
     border: 1px solid #e6e6f0;
@@ -128,4 +134,9 @@ fieldset legend{
 .input-wrapper textarea{
     padding: 0;
     height: 168px;
+}
+
+.input-wrapper select{
+    appearance: none;
+    -webkit-appearance: none;
 }
