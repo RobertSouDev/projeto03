@@ -140,3 +140,14 @@ fieldset legend{
     appearance: none;
     -webkit-appearance: none;
 }
+
+.t-col{
+    display: flex;
+    gap: 20px;
+
+}
+
+.t-col > div:nth-child(1){
+    width: 100%;
+
+}
