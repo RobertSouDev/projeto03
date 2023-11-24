@@ -148,20 +148,33 @@ fieldset legend{
 
 }
 
-.t-col > div:nth-child(1){
+.t-col > div:nth-child(1) {
     width: 100%;
 
 }
+
+.checkbox-rwapper {
+    position: relative;
+}
+
+.checkbox-rwapper  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
 
 .checkbox-rwapper label{
     margin-left: 5px;
     display: flex;
     align-items: center;
     gap: 16px;
-}
 
-.checkbox-rwapper input{
-    display: none;
+    margin: 0;
 }
 
 .checkbox-rwapper label::before{
@@ -174,4 +187,9 @@ fieldset legend{
 
 .checkbox-rwapper input:checked + label::before {
     background: #42d3ff;
+}
+
+
+.checkbox-rwapper input:focus + label::before{
+    outline: 2px solid black;
 }
