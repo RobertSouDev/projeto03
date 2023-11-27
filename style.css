@@ -223,8 +223,13 @@ footer {
 
     color:#FFFFFF;
 }
+
 .button:hover{
     background: #08a04c;
 
+}
+
+input:invalid{
+    border: 2px solid #ff1010;
 }
 
